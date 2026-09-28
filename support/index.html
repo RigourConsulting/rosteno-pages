@@ -9,6 +9,7 @@
   <link rel="icon" type="image/png" href="../assets/rosteno-icon.png">
 </head>
 <body>
+  <a href="#main-content" class="skip-link">Skip to main content</a>
   <nav class="site-nav">
     <div class="nav-container">
       <a href="../" class="brand-link">
@@ -19,13 +20,13 @@
         <li><a href="../">Home</a></li>
         <li><a href="../privacy/">Privacy</a></li>
         <li><a href="../terms/">Terms</a></li>
-        <li><a href="./" class="active">Support</a></li>
+        <li><a href="./" class="active" aria-current="page">Support</a></li>
         <li><a href="../pay-calculation-notice/">Pay Notice</a></li>
       </ul>
     </div>
   </nav>
 
-  <main class="main-content">
+  <main id="main-content" class="main-content">
     <div class="doc-card">
       <div class="meta-box">
         <p><strong>Application:</strong> Rosteno: Shift, Hours &amp; Pay</p>
@@ -44,7 +45,7 @@
       <p>No. Rosteno does not have an employer portal. Your employer cannot view, track, or edit your entries. Your records remain completely under your control.</p>
 
       <h3>3. How does break recording work?</h3>
-      <p>When you start a break in the Work Clock, you can confirm whether that break is Paid, Unpaid, or Break payment required. Rosteno uses your actual recorded breaks rather than guessing what breaks you took.</p>
+      <p>When you start a break in the Work Clock, you can confirm whether that break is Paid, Unpaid, or Not sure. Rosteno uses your actual recorded breaks rather than guessing what breaks you took.</p>
 
       <h3>4. How do I review payslips after scanning?</h3>
       <p>When you import a payslip image or document, Rosteno extracts values on your device and opens a Candidate Review screen. You can check the extracted pay period dates, gross pay, net pay, and line items, adjust any figures, and confirm them before they are saved to your records.</p>
@@ -54,8 +55,9 @@
       <ul>
         <li>A PDF summary formatted for easy reading.</li>
         <li>A CSV spreadsheet containing your itemised records.</li>
-        <li>A SHA-256 integrity manifest that lets anyone verify the exported files have not been modified.</li>
+        <li>A SHA-256 integrity manifest that lets anyone verify exported files still match the recorded hashes.</li>
       </ul>
+      <p>The Evidence Review Pack includes SHA-256 integrity fingerprints that can be used to check whether exported files still match the recorded hashes.</p>
       <p>You can share these files directly through Android's standard share sheet with your union, representative, or advisor.</p>
 
       <h3>6. Reporting a Bug or Getting Help</h3>
